@@ -1,0 +1,286 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "CenturyGothic";
+  src: url("../fonts/Century Gothic/centurygothic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CenturyGothic";
+  src: url("../fonts/Century Gothic/centurygothic_bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  background: url(../images/BG.svg);
+  color: #FFFFFF;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+}
+
+/* Удаление отступов и полей у всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Обнуление размеров шрифта и высоты строки */
+html {
+  font-size: 100%;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%; /* Для устранения увеличения текста в мобильных браузерах */
+}
+
+/* Удаление стилизации списка */
+ul, ol {
+  list-style: none;
+}
+
+/* Удаление подчеркивания у ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Обнуление стилей для изображений */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Удаление границ у элементов форм */
+button, input, textarea, select {
+  border: none;
+  outline: none;
+  font: inherit;
+}
+
+/* Сброс стилей таблиц */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Удаление лишнего стиля для кнопок */
+button {
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Блок для предотвращения перевода элементов в курсив или жирный шрифт */
+b, strong {
+  font-weight: bold;
+}
+
+i, em {
+  font-style: normal;
+}
+
+.h2 {
+  font-family: "CenturyGothic";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58.85px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.header {
+  background-color: #0B0833;
+}
+.header .logo {
+  display: block;
+  max-height: 80px;
+  max-width: 215px;
+}
+.header .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main {
+  padding: 80px 0;
+}
+.main__banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.main__nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main__nav a {
+  display: block;
+  background-color: #8EB0FF;
+  width: 36px;
+  height: 36px;
+  border: 2px solid rgb(2, 74, 241);
+  padding: 5px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+.main__nav a:hover, .main__nav a.active {
+  background-color: rgb(2, 74, 241);
+}
+.main__nav a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.main__info {
+  font-family: "CenturyGothic";
+}
+.main__info a {
+  display: block;
+  background: #FFFFFF;
+  border-radius: 10px;
+  color: rgb(0, 48, 160);
+  font-family: "CenturyGothic";
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 85.83px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.main__info a:hover {
+  background: rgb(0, 48, 160);
+  color: #FFFFFF;
+}
+.main__image {
+  flex-basis: 40%;
+}
+.main__image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+}
+
+.acquaintance {
+  padding: 80px 0;
+}
+.acquaintance p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 27px;
+  line-height: 32.93px;
+  text-align: justify;
+}
+
+.video_slider .swiper {
+  width: 100%;
+  height: 100%;
+}
+.video_slider .swiper-slide {
+  text-align: center;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video_slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bonus_table table {
+  box-sizing: border-box;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(0, 66, 218, 0.2) 0%, rgba(171, 179, 255, 0.2) 100%);
+  border: 4px solid #6372FF;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42.67px;
+  text-align: center;
+}
+.bonus_table table th, .bonus_table table td {
+  border-width: 1px 0px 0px 1px;
+  border-style: solid;
+  border-color: #8EB0FF;
+  padding: 15px 10px;
+  height: 110px;
+  width: 33%;
+}
+
+.footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  font-family: "CenturyGothic";
+  text-align: left;
+  font-size: 22px;
+}
+.footer__menu_title {
+  color: rgb(142, 176, 255);
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.footer__menu_item {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Адаптация для экранов шириной до 1440px */
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+/* Адаптация для экранов шириной до 1280px */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+/* Адаптация для экранов шириной до 1024px */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+/* Адаптация для экранов шириной до 768px (планшеты) */
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+/* Адаптация для экранов шириной до 480px (мобильные устройства) */
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
