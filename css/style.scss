@@ -109,8 +109,10 @@ body{
   padding: 80px 0;
   &__banner{
     display: flex;
+    gap: 40px;
     justify-content: space-between;
     align-items: flex-start;
+    height: 500px;
 
   }
     &__nav{
@@ -140,12 +142,17 @@ body{
     }
     &__info{
         font-family: 'CenturyGothic';
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
         a{
             display: block;
             background: #FFFFFF;
             border-radius: 10px;
+            max-width: 288px;
             color: rgba(0, 48, 160, 1);
-            font-family: 'CenturyGothic';
             font-size: 70px;
             font-weight: 700;
             line-height: 85.83px;
@@ -155,13 +162,26 @@ body{
                 background: rgba(0, 48, 160, 1);
                 color: #FFFFFF;
             }
+            
+        }
+        .name{
+          font-size: 35px;
+          line-height: 42.91px;
+          text-align: left;
+          
+        }
+        .content{
+          font-size: 75px;
+          line-height: 91.96px;
+          text-align: left;
+          
         }
     }
     &__image{
-        flex-basis: 40%;
+        flex-basis: 45%;
         img{
             width: 100%;
-            object-fit: contain;
+            object-fit: cover;
             height: 100%;
         }
     }
@@ -185,11 +205,19 @@ body{
       }
   
       .swiper-slide {
-        text-align: center;
-        width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100% !important;
+        .content{
+          border: 9px solid; /* Задание ширины и стиля границы */
+          border-image-source: linear-gradient(90deg, #6372FF 0%, #0030A0 100%);
+          border-image-slice: 1; /* Указывает, как резать изображение границы */
+          width: 30px;
+          text-align: center;
+          width: 80% !important;
+          height: 80vh;
+        }
       }
   
       .swiper-slide img {
